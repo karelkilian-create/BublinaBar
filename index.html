@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BublinaBar — první děčínský Prosecco Bar na 3 kolech. Proměníme vaši svatbu, oslavu nebo firemní večírek v nezapomenutelný zážitek.">
+  <meta name="keywords" content="prosecco bar, mobilní bar, svatba Děčín, oslava, firemní akce, catering Děčín, proseccovan">
+  <title>BublinaBar — Prosecco Bar na 3 kolech | Děčín</title>
+
+  <meta property="og:title" content="BublinaBar — Prosecco Bar na 3 kolech">
+  <meta property="og:description" content="Mobilní prosecco bar pro svatby, oslavy a firemní akce. Přijedeme a vytvoříme atmosféru, na kterou budou hosté vzpomínat.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'none';
+    style-src   'self' 'unsafe-inline';
+    font-src    'self';
+    img-src     'self' data:;
+    media-src   'self';
+    script-src  'unsafe-inline';
+    connect-src https://formspree.io;
+    form-action 'self' https://formspree.io;
+    base-uri    'self';
+    frame-ancestors 'none';
+  ">
+
+  <style>
+    /* Cormorant Garamond — self-hosted, GDPR safe */
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: normal;
+      font-weight: 300 600;
+      font-display: swap;
+      src: url('fonts/cg-normal-latin-ext.woff2') format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+                     U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF,
+                     U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: normal;
+      font-weight: 300 600;
+      font-display: swap;
+      src: url('fonts/cg-normal-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+                     U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: italic;
+      font-weight: 300 500;
+      font-display: swap;
+      src: url('fonts/cg-italic-latin-ext.woff2') format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+                     U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF,
+                     U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: italic;
+      font-weight: 300 500;
+      font-display: swap;
+      src: url('fonts/cg-italic-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+                     U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* Inter — self-hosted, GDPR safe */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300 600;
+      font-display: swap;
+      src: url('fonts/inter-latin-ext.woff2') format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+                     U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF,
+                     U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300 600;
+      font-display: swap;
+      src: url('fonts/inter-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+                     U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+
+  <style>
+    :root {
+      --ivory:       #FDFAF5;
+      --champagne:   #F5E6CA;
+      --beige:       #EAD9BE;
+      --gold:        #C9A84C;
+      --gold-dim:    rgba(201,168,76,0.14);
+      --gold-border: rgba(201,168,76,0.28);
+      --dark:        #1E1610;
+      --dark2:       #2C2416;
+      --text:        #4A3F32;
+      --text-muted:  #8A7E72;
+      --white:       #FFFFFF;
+      --r:           4px;
+      --ease:        cubic-bezier(0.4,0,0.2,1);
+      --w:           1200px;
+      --serif:       'Cormorant Garamond', Georgia, serif;
+      --sans:        'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--sans);
+      background: var(--ivory);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { font-family: inherit; cursor: pointer; border: none; }
+
+    h1, h2, h3 { font-family: var(--serif); color: var(--dark); line-height: 1.15; }
+    h1 { font-size: clamp(2.6rem, 6.5vw, 4.5rem); font-weight: 300; }
+    h2 { font-size: clamp(1.9rem, 4vw, 2.9rem); font-weight: 300; }
+    h3 { font-size: clamp(1.05rem, 2vw, 1.35rem); font-weight: 400; }
+    p  { line-height: 1.78; }
+
+    .label {
+      display: block;
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.55rem;
+    }
+    .divider { width: 36px; height: 1px; background: var(--gold); margin: 1rem 0 0; }
+    .divider--c { margin: 1rem auto 0; }
+
+    .wrap { max-width: var(--w); margin: 0 auto; padding: 0 1.5rem; }
+    .section { padding: 5.5rem 0; }
+    .section--alt  { background: var(--champagne); }
+    .section--dark { background: var(--dark); }
+
+    /* Fade-in */
+    .fi {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .fi.on { opacity: 1; transform: none; }
+    .fi.d1 { transition-delay: 0.10s; }
+    .fi.d2 { transition-delay: 0.20s; }
+    .fi.d3 { transition-delay: 0.30s; }
+    .fi.d4 { transition-delay: 0.40s; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.85rem 1.9rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      border-radius: var(--r);
+      transition: all 0.28s var(--ease);
+      white-space: nowrap;
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--white);
+    }
+    .btn-gold:hover {
+      background: #b8952f;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 22px rgba(201,168,76,0.42);
+    }
+    .btn-gl {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.45);
+    }
+    .btn-gl:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.8); }
+    .btn-gd {
+      background: transparent;
+      color: var(--dark);
+      border: 1px solid var(--gold-border);
+    }
+    .btn-gd:hover { background: var(--gold-dim); border-color: var(--gold); }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 200;
+      padding: 1.3rem 0;
+      transition: background 0.35s var(--ease), padding 0.35s var(--ease), box-shadow 0.35s var(--ease);
+    }
+    .nav.solid {
+      background: rgba(253,250,245,0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 1px 18px rgba(44,36,22,0.09);
+      padding: 0.65rem 0;
+    }
+    .nav__row { display: flex; align-items: center; justify-content: space-between; }
+
+    .nav__logo { display: flex; align-items: center; gap: 0.6rem; }
+    .nav__logo img {
+      height: 40px;
+      width: 40px;
+      object-fit: contain;
+      /* logo.png má bílé pozadí — mix-blend-mode:multiply ho skryje na světlém bg */
+      mix-blend-mode: multiply;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .nav.solid .nav__logo img { opacity: 1; }
+    .nav__logo-text {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      transition: color 0.3s;
+    }
+    .nav.solid .nav__logo-text { color: var(--dark); }
+    .nav__logo-text b { color: var(--gold); font-weight: 400; }
+
+    .nav__links { display: none; gap: 2rem; align-items: center; }
+    @media (min-width: 768px) { .nav__links { display: flex; } }
+    .nav__links a {
+      font-size: 0.76rem;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.8);
+      transition: color 0.25s;
+    }
+    .nav.solid .nav__links a { color: var(--text); }
+    .nav__links a:hover { color: var(--gold); }
+    .nav__cta { display: none; }
+    @media (min-width: 768px) { .nav__cta { display: inline-flex; } }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero__video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(to right,
+        rgba(18,12,6,0.88) 0%,
+        rgba(18,12,6,0.76) 45%,
+        rgba(18,12,6,0.32) 100%);
+    }
+    .hero__content {
+      position: relative;
+      z-index: 3;
+      max-width: 680px;
+    }
+    .hero__logo {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      mix-blend-mode: luminosity;
+      filter: brightness(1.6) contrast(0.9);
+      margin-bottom: 1.6rem;
+      opacity: 0;
+      animation: fadeUp 0.8s var(--ease) 0.2s forwards;
+    }
+    .hero__eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.4rem;
+      opacity: 0;
+      animation: fadeUp 0.8s var(--ease) 0.35s forwards;
+    }
+    .hero__eyebrow::before { content: ''; width: 26px; height: 1px; background: var(--gold); }
+    .hero__title {
+      font-family: var(--serif);
+      font-size: clamp(2.9rem, 7vw, 5rem);
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s var(--ease) 0.5s forwards;
+    }
+    .hero__title em { font-style: italic; color: var(--gold); }
+    .hero__sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.70);
+      max-width: 500px;
+      line-height: 1.85;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s var(--ease) 0.65s forwards;
+    }
+    .hero__ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.8s var(--ease) 0.8s forwards;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: none; }
+    }
+    .hero__scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.64rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      animation: bob 2.5s ease infinite;
+    }
+    .hero__scroll::after { content: ''; width: 1px; height: 42px; background: linear-gradient(to bottom, rgba(255,255,255,0.35), transparent); }
+    @keyframes bob {
+      0%,100% { transform: translateX(-50%) translateY(0); }
+      50%      { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ── EVENTS ── */
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    @media (min-width: 640px) { .events-grid { grid-template-columns: repeat(4, 1fr); } }
+    .ecard {
+      padding: 1.75rem 1.4rem;
+      background: var(--white);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--r);
+      transition: all 0.3s var(--ease);
+    }
+    .ecard:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(44,36,22,0.12); border-color: var(--gold); }
+    .ecard__icon { font-size: 1.65rem; margin-bottom: 0.9rem; }
+    .ecard__name { font-family: var(--serif); font-size: 1.1rem; color: var(--dark); margin-bottom: 0.4rem; }
+    .ecard__desc { font-size: 0.93rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* ── BENEFITS ── */
+    .benefits-layout {
+      display: grid;
+      gap: 3.5rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
+    @media (min-width: 768px) { .benefits-layout { grid-template-columns: 1fr 1fr; } }
+
+    .benefits-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.55rem; }
+    .bitem { display: flex; gap: 0.85rem; align-items: flex-start; }
+    .bitem__icon {
+      flex-shrink: 0;
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--gold-dim);
+      border: 1px solid var(--gold-border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.05rem;
+    }
+    .bitem__text { font-size: 0.9rem; font-weight: 500; color: var(--text); padding-top: 0.6rem; }
+
+    .benefits-photo {
+      position: relative;
+      border-radius: var(--r);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+    }
+    .benefits-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .benefits-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(20,15,6,0.35), transparent 50%);
+      pointer-events: none;
+    }
+
+    /* ── STEPS ── */
+    .steps { display: grid; margin-top: 3.5rem; }
+    @media (min-width: 640px) { .steps { grid-template-columns: repeat(4, 1fr); } }
+    .step { padding: 2rem 1.5rem; text-align: center; position: relative; }
+    .step::before, .step::after { display: none; }
+    @media (min-width: 640px) {
+      .step::after  { content: ''; display: block; position: absolute; top: 3.1rem; right: 0;   width: 50%; height: 1px; background: var(--gold-border); }
+      .step::before { content: ''; display: block; position: absolute; top: 3.1rem; left: 0;    width: 50%; height: 1px; background: var(--gold-border); }
+      .step:first-child::before { display: none; }
+      .step:last-child::after   { display: none; }
+    }
+    .step__num {
+      width: 3rem; height: 3rem;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.2rem;
+      position: relative; z-index: 1;
+    }
+    .step__title { font-family: var(--serif); font-size: 1.05rem; color: var(--dark); margin-bottom: 0.45rem; }
+    .step__desc  { font-size: 0.83rem; color: var(--text-muted); }
+
+    /* ── GALLERY ── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.65rem;
+      margin-top: 3rem;
+    }
+    @media (min-width: 640px) {
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .gi {
+      aspect-ratio: 4 / 3;
+      border-radius: var(--r);
+      overflow: hidden;
+      position: relative;
+      cursor: zoom-in;
+      transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    }
+    .gi:hover { transform: scale(1.025); box-shadow: 0 10px 36px rgba(44,36,22,0.2); }
+    .gi img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s var(--ease); }
+    .gi:hover img { transform: scale(1.05); }
+
+    /* ── LIGHTBOX ── */
+    .lb {
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(18,12,6,0.92);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s var(--ease);
+    }
+    .lb.open { opacity: 1; pointer-events: all; }
+    .lb__img {
+      max-width: min(90vw, 1100px);
+      max-height: 88dvh;
+      border-radius: var(--r);
+      object-fit: contain;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+      transition: opacity 0.22s var(--ease);
+      display: block;
+    }
+    .lb__img.switching { opacity: 0; }
+    .lb__btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: rgba(253,250,245,0.12);
+      border: 1px solid rgba(253,250,245,0.2);
+      color: var(--white);
+      font-size: 1.2rem;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .lb__btn:hover { background: rgba(201,168,76,0.35); border-color: var(--gold); }
+    .lb__prev { left: 1.25rem; }
+    .lb__next { right: 1.25rem; }
+    .lb__close {
+      position: absolute;
+      top: 1.25rem; right: 1.25rem;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(253,250,245,0.1);
+      border: 1px solid rgba(253,250,245,0.18);
+      color: var(--white);
+      font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .lb__close:hover { background: rgba(201,168,76,0.35); border-color: var(--gold); }
+    .lb__counter {
+      position: absolute;
+      bottom: 1.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.75rem;
+      color: rgba(253,250,245,0.45);
+      letter-spacing: 0.1em;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testi-grid {
+      display: grid;
+      gap: 1.2rem;
+      margin-top: 3rem;
+    }
+    @media (min-width: 640px) { .testi-grid { grid-template-columns: repeat(3, 1fr); } }
+    .tcard {
+      padding: 1.9rem 1.7rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: var(--r);
+    }
+    .tcard__stars { color: var(--gold); font-size: 0.8rem; letter-spacing: 0.1em; margin-bottom: 1rem; }
+    .tcard__text {
+      font-family: var(--serif);
+      font-size: 1.02rem;
+      font-style: italic;
+      color: rgba(253,250,245,0.82);
+      line-height: 1.82;
+      margin-bottom: 1.4rem;
+    }
+    .tcard__name  { font-size: 0.77rem; font-weight: 600; color: var(--gold); letter-spacing: 0.06em; text-transform: uppercase; }
+    .tcard__event { font-size: 0.72rem; color: rgba(253,250,245,0.32); margin-top: 0.2rem; }
+    .testi-note   { text-align: center; margin-top: 1.75rem; font-size: 0.74rem; color: rgba(253,250,245,0.25); }
+
+    /* ── ABOUT ── */
+    .about-layout {
+      display: grid;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    @media (min-width: 768px) { .about-layout { grid-template-columns: 1fr 1fr; } }
+    .about-text p { color: var(--text-muted); margin-bottom: 1.3rem; font-size: 0.97rem; line-height: 1.82; }
+    .about-quote {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--dark);
+      border-left: 2px solid var(--gold);
+      padding-left: 1.25rem;
+      margin: 1.75rem 0;
+      line-height: 1.72;
+    }
+    .about-photos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+    }
+    .aphoto {
+      border-radius: var(--r);
+      overflow: hidden;
+    }
+    .aphoto:first-child { grid-row: span 2; }
+    .aphoto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 767px) {
+      .aphoto:first-child { height: 280px; }
+      .aphoto:not(:first-child) { height: 130px; }
+    }
+    @media (min-width: 768px) {
+      .aphoto:first-child { height: 380px; }
+      .aphoto:not(:first-child) { height: 180px; }
+    }
+
+    /* ── CONTACT ── */
+    .contact-layout {
+      display: grid;
+      gap: 3.5rem;
+      margin-top: 3rem;
+    }
+    @media (min-width: 768px) { .contact-layout { grid-template-columns: 1fr 1.6fr; align-items: start; } }
+    .contact-info p { color: rgba(253,250,245,0.68); font-size: 0.96rem; line-height: 1.82; margin-bottom: 2rem; }
+    .contact-info h2 { color: var(--white); }
+    .cdetails { display: flex; flex-direction: column; gap: 0.9rem; }
+    .cdetail {
+      display: flex; align-items: center; gap: 0.75rem;
+      color: rgba(253,250,245,0.52);
+      font-size: 0.88rem;
+    }
+    .cdetail a { color: inherit; transition: color 0.25s; }
+    .cdetail a:hover { color: var(--gold); }
+
+    .form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 480px) {
+      .form { grid-template-columns: 1fr; }
+      .full, .form-submit { grid-column: span 1 !important; }
+    }
+    .full { grid-column: span 2; }
+    .fg { display: flex; flex-direction: column; gap: 0.35rem; }
+    .fg label {
+      font-size: 0.69rem;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: rgba(253,250,245,0.4);
+    }
+    .fg input, .fg textarea {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      padding: 0.78rem 1rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: var(--r);
+      color: var(--white);
+      transition: border-color 0.25s, background 0.25s;
+      width: 100%;
+    }
+    .fg input::placeholder, .fg textarea::placeholder { color: rgba(253,250,245,0.26); }
+    .fg input:focus, .fg textarea:focus { outline: none; border-color: var(--gold); background: rgba(255,255,255,0.08); }
+    .fg textarea { resize: vertical; min-height: 116px; }
+    .form-submit { grid-column: span 2; display: flex; justify-content: flex-end; margin-top: 0.4rem; }
+    .form-success { display: none; text-align: center; padding: 3rem 1rem; }
+    .form-success h3 { font-family: var(--serif); font-size: 1.6rem; color: var(--gold); margin-bottom: 0.75rem; }
+    .form-success p { color: rgba(253,250,245,0.62); }
+
+    /* ── FOOTER ── */
+    .footer { background: #120E07; padding: 2rem 0; }
+    .footer__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+    }
+    @media (min-width: 640px) {
+      .footer__row { flex-direction: row; justify-content: space-between; text-align: left; }
+    }
+    .footer__logo { display: flex; align-items: center; gap: 0.5rem; }
+    .footer__logo img { height: 32px; width: 32px; object-fit: contain; mix-blend-mode: luminosity; filter: brightness(1.4); }
+    .footer__logo span { font-family: var(--serif); font-size: 1.25rem; color: var(--white); }
+    .footer__logo b { color: var(--gold); font-weight: 400; }
+    .footer__copy { font-size: 0.77rem; color: rgba(253,250,245,0.26); }
+    .footer__links { display: flex; gap: 1.5rem; }
+    .footer__links a { font-size: 0.77rem; color: rgba(253,250,245,0.36); transition: color 0.25s; }
+    .footer__links a:hover { color: var(--gold); }
+
+    /* ── STICKY MOBILE CTA ── */
+    .sticky {
+      position: fixed;
+      inset: auto 0 0;
+      z-index: 150;
+      padding: 0.85rem 1.25rem;
+      background: rgba(253,250,245,0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid var(--gold-border);
+      display: flex;
+      gap: 0.6rem;
+      transform: translateY(100%);
+      transition: transform 0.4s var(--ease);
+    }
+    .sticky.show { transform: none; }
+    @media (min-width: 768px) { .sticky { display: none !important; } }
+    .sticky .btn { flex: 1; justify-content: center; font-size: 0.8rem; padding: 0.72rem 0.6rem; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <div class="nav__row">
+        <a href="#" class="nav__logo" aria-label="BublinaBar – domů">
+          <img src="images/logo.png" alt="" aria-hidden="true">
+          <span class="nav__logo-text">Bublina<b>Bar</b></span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="#akce">Pro jaké akce</a></li>
+          <li><a href="#jak-to-funguje">Jak to funguje</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#o-nas">O nás</a></li>
+        </ul>
+        <a href="#kontakt" class="btn btn-gl nav__cta">Nezávazně poptat</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Úvod">
+    <video class="hero__video" autoplay muted loop playsinline
+           poster="images/BB_auto.jpg" aria-hidden="true">
+      <source src="images/VID-20260530-WA0000.mp4" type="video/mp4">
+    </video>
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero__content">
+        <img
+          src="images/logo.png"
+          alt="BublinaBar logo"
+          class="hero__logo"
+        >
+        <div class="hero__eyebrow">Děčín &amp; okolí</div>
+        <h1 class="hero__title">
+          První děčínský<br>
+          <em>Prosecco Bar</em><br>
+          na 3 kolech
+        </h1>
+        <p class="hero__sub">
+          Proměníme vaši svatbu, oslavu nebo firemní večírek<br>
+          v místo, kde se lidé zastaví, připijí si a užijí atmosféru,<br>
+          na kterou budou vzpomínat.
+        </p>
+        <div class="hero__ctas">
+          <a href="#kontakt" class="btn btn-gold">Nezávazně poptat termín</a>
+          <a href="#akce"    class="btn btn-gl">Zjistit více</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">scroll</div>
+  </section>
+
+  <!-- PRO JAKÉ AKCE -->
+  <section class="section" id="akce">
+    <div class="wrap">
+      <div class="fi">
+        <span class="label">Kde nás potkáte</span>
+        <h2>Pro jaké akce</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="events-grid">
+        <div class="ecard fi d1">
+          <div class="ecard__icon">💍</div>
+          <div class="ecard__name">Svatby</div>
+          <p class="ecard__desc">Elegantní prosecco servis pro váš velký den. Originální prvek, nádherné fotky, hosté nadšení.</p>
+        </div>
+        <div class="ecard fi d2">
+          <div class="ecard__icon">🎉</div>
+          <div class="ecard__name">Oslavy</div>
+          <p class="ecard__desc">Narozeniny, zahradní párty i rodinná setkání. Pohodová atmosféra bez starostí o catering.</p>
+        </div>
+        <div class="ecard fi d3">
+          <div class="ecard__icon">🏢</div>
+          <div class="ecard__name">Firemní akce</div>
+          <p class="ecard__desc">Stylové občerstvení pro zaměstnance i klienty. Profesionální dojem, atraktivní servis.</p>
+        </div>
+        <div class="ecard fi d4">
+          <div class="ecard__icon">🎪</div>
+          <div class="ecard__name">Festivaly</div>
+          <p class="ecard__desc">Přitáhneme pozornost i dobrou náladu. Designový prvek, který nikdo nepřehlédne.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CO ZÍSKÁTE -->
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="benefits-layout">
+        <div>
+          <div class="fi">
+            <span class="label">Naše nabídka</span>
+            <h2>Co získáte</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="benefits-list" style="margin-top:2.5rem">
+            <div class="bitem fi d1">
+              <div class="bitem__icon">🚲</div>
+              <div class="bitem__text">Mobilní prosecco bar</div>
+            </div>
+            <div class="bitem fi d2">
+              <div class="bitem__icon">🥂</div>
+              <div class="bitem__text">Profesionální obsluhu</div>
+            </div>
+            <div class="bitem fi d3">
+              <div class="bitem__icon">✨</div>
+              <div class="bitem__text">Chill atmosféru</div>
+            </div>
+            <div class="bitem fi d4">
+              <div class="bitem__icon">📸</div>
+              <div class="bitem__text">Fotogenický design</div>
+            </div>
+            <div class="bitem fi d1">
+              <div class="bitem__icon">💛</div>
+              <div class="bitem__text">Individuální přístup</div>
+            </div>
+            <div class="bitem fi d2">
+              <div class="bitem__icon">🌟</div>
+              <div class="bitem__text">Nezapomenutelný zážitek</div>
+            </div>
+          </div>
+        </div>
+        <div class="benefits-photo fi d2">
+          <img
+            src="images/BB_1.jpg"
+            alt="Celý setup BublinaBar v poli — vozík, křesla, zlatá hodinka"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JAK TO FUNGUJE -->
+  <section class="section" id="jak-to-funguje">
+    <div class="wrap">
+      <div class="fi" style="text-align:center">
+        <span class="label">Jednoduše</span>
+        <h2>Jak to funguje</h2>
+        <div class="divider divider--c"></div>
+      </div>
+      <div class="steps">
+        <div class="step fi d1">
+          <div class="step__num">1</div>
+          <div class="step__title">Ozvete se nám</div>
+          <p class="step__desc">Napište nebo zavolejte. Zodpovíme vše a rádi poradíme.</p>
+        </div>
+        <div class="step fi d2">
+          <div class="step__num">2</div>
+          <div class="step__title">Domluvíme vše</div>
+          <p class="step__desc">Upřesníme termín, místo a podobu akce přesně podle vás.</p>
+        </div>
+        <div class="step fi d3">
+          <div class="step__num">3</div>
+          <div class="step__title">Přijedeme na místo</div>
+          <p class="step__desc">Postaráme se o vše — vy se staráte jen o hosty.</p>
+        </div>
+        <div class="step fi d4">
+          <div class="step__num">4</div>
+          <div class="step__title">Vytváříme atmosféru</div>
+          <p class="step__desc">Naléváme, obsluhujeme a tvoříme atmosféru, na kterou se nezapomíná.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="section section--alt" id="galerie">
+    <div class="wrap">
+      <div class="fi" style="text-align:center">
+        <span class="label">BublinaBar v akci</span>
+        <h2>Galerie</h2>
+        <div class="divider divider--c"></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gi fi">
+          <img src="images/BB_auto.jpg"
+               alt="BublinaBar vozík při zlaté hodince — boční pohled"
+               loading="lazy">
+        </div>
+        <div class="gi fi d1">
+          <img src="images/704636755_10233302435555305_210803312022517839_n.jpg"
+               alt="BublinaBar na venkovní akci v parku"
+               loading="lazy">
+        </div>
+        <div class="gi fi d2">
+          <img src="images/BB_napis.jpg"
+               alt="Detail nápisu Bublina Bar Proseccovan"
+               loading="lazy">
+        </div>
+        <div class="gi fi d1">
+          <img src="images/705453063_10233302436915339_3335785204123893662_n.jpg"
+               alt="BublinaBar večer s pohádkovými světýlky"
+               loading="lazy">
+        </div>
+        <div class="gi fi d2">
+          <img src="images/BB_holky_auto.jpg"
+               alt="Obsluha BublinaBar před vozíkem na festivalu"
+               loading="lazy">
+        </div>
+        <div class="gi fi d3">
+          <img src="images/bublinabar2.jpg"
+               alt="Detail výčepní části baru"
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCE -->
+  <section class="section section--dark">
+    <div class="wrap">
+      <div class="fi" style="text-align:center">
+        <span class="label">Co říkají klienti</span>
+        <h2 style="color:var(--white)">Reference</h2>
+        <div class="divider divider--c"></div>
+      </div>
+      <div class="testi-grid">
+        <div class="tcard fi d1">
+          <div class="tcard__stars">★★★★★</div>
+          <p class="tcard__text">"BublinaBar byl absolutní hvězdou naší svatby. Hosté se u vozíku zastavovali celý večer — a my máme nádherné fotky."</p>
+          <div class="tcard__name">Tereza M.</div>
+          <div class="tcard__event">Svatba, léto 2025</div>
+        </div>
+        <div class="tcard fi d2">
+          <div class="tcard__stars">★★★★★</div>
+          <p class="tcard__text">"Na zahradní oslavě vytvořil BublinaBar přesně tu atmosféru, o které jsem snila. Doporučuji každému bez výjimky!"</p>
+          <div class="tcard__name">Markéta K.</div>
+          <div class="tcard__event">Zahradní párty, 2025</div>
+        </div>
+        <div class="tcard fi d3">
+          <div class="tcard__stars">★★★★★</div>
+          <p class="tcard__text">"Naši zaměstnanci byli nadšení. Stylový servis, profesionální přístup — to byl naprostý hit celého firemního večírku."</p>
+          <div class="tcard__name">Jan P.</div>
+          <div class="tcard__event">Firemní akce, 2025</div>
+        </div>
+      </div>
+      <p class="testi-note">Ilustrativní reference — doplňte skutečné recenze od klientů.</p>
+    </div>
+  </section>
+
+  <!-- O NÁS -->
+  <section class="section" id="o-nas">
+    <div class="wrap">
+      <div class="about-layout">
+        <div class="about-text fi">
+          <span class="label">Náš příběh</span>
+          <h2>O nás</h2>
+          <div class="divider"></div>
+          <br>
+          <p>BublinaBar vznikl z nadšení pro atmosféru letních akcí, prosecco a setkávání lidí.</p>
+          <blockquote class="about-quote">
+            „Nechceme být jen další catering.<br>
+            Chceme být součástí vašich vzpomínek."
+          </blockquote>
+          <p>Jsme první prosecco bar na 3 kolech v Děčíně. Náš vintage vozík přijede téměř kamkoliv — a s ním přijede styl, pohoda a atmosféra, která váš večer povýší na celý jiný level.</p>
+          <br>
+          <a href="#kontakt" class="btn btn-gd">Napište nám</a>
+        </div>
+        <div class="about-photos fi d2">
+          <div class="aphoto">
+            <img src="images/BB_holky_auto.jpg"
+                 alt="Tým BublinaBar před vozíkem"
+                 loading="lazy">
+          </div>
+          <div class="aphoto">
+            <img src="images/BB_napis.jpg"
+                 alt="Nápis Bublina Bar Proseccovan"
+                 loading="lazy">
+          </div>
+          <div class="aphoto">
+            <img src="images/705453063_10233302436915339_3335785204123893662_n.jpg"
+                 alt="BublinaBar večerní atmosféra"
+                 loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section section--dark" id="kontakt">
+    <div class="wrap">
+      <div class="contact-layout">
+        <div class="fi">
+          <span class="label">Zarezervujte si místo</span>
+          <h2 style="color:var(--white)">Rezervujte si<br>svůj termín</h2>
+          <div class="divider"></div>
+          <br>
+          <div class="contact-info">
+            <p>Napište nám a společně připravíme prosecco zážitek přesně pro vaši akci.</p>
+          </div>
+          <div class="cdetails">
+            <div class="cdetail">
+              <span>📍</span>
+              <span>Děčín a okolí</span>
+            </div>
+            <div class="cdetail">
+              <span>📱</span>
+              <a href="tel:+420737318138">737 318 138</a>
+            </div>
+            <div class="cdetail">
+              <span>✉️</span>
+              <a href="mailto:bublinabar@seznam.cz">bublinabar@seznam.cz</a>
+            </div>
+            <div class="cdetail">
+              <span>📘</span>
+              <a href="https://www.facebook.com/BublinaBar" target="_blank" rel="noopener noreferrer">
+                Facebook — BublinaBar
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fi d1">
+          <form class="form" id="contactForm" novalidate>
+            <!-- Honeypot — skryté pole pro odchycení spambotů; lidé ho nevyplní -->
+            <div style="display:none" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="fg">
+              <label for="jmeno">Jméno *</label>
+              <input type="text" id="jmeno" name="jmeno" placeholder="Vaše jméno" required autocomplete="name">
+            </div>
+            <div class="fg">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="vas@email.cz" required autocomplete="email">
+            </div>
+            <div class="fg">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+420 777 000 000" autocomplete="tel">
+            </div>
+            <div class="fg">
+              <label for="datum">Datum akce</label>
+              <input type="date" id="datum" name="datum">
+            </div>
+            <div class="fg full">
+              <label for="misto">Místo akce</label>
+              <input type="text" id="misto" name="misto" placeholder="Město, adresa nebo typ místa">
+            </div>
+            <div class="fg full">
+              <label for="zprava">Zpráva</label>
+              <textarea id="zprava" name="zprava" placeholder="Popište nám svou akci — počet hostů, typ akce nebo cokoliv dalšího…"></textarea>
+            </div>
+            <div class="form-submit full">
+              <button type="submit" class="btn btn-gold" id="submitBtn">
+                Odeslat poptávku →
+              </button>
+            </div>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <h3>Díky za poptávku!</h3>
+            <p>Ozveme se vám co nejdříve a domluvíme vše potřebné. 🥂</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__row">
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="BublinaBar logo">
+          <span>Bublina<b>Bar</b></span>
+        </div>
+        <p class="footer__copy">© 2025 BublinaBar — Proseccovan. Všechna práva vyhrazena.</p>
+        <div class="footer__links">
+          <a href="https://www.facebook.com/BublinaBar" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="#kontakt">Kontakt</a>
+          <a href="#akce">Akce</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galerie">
+    <button class="lb__close" id="lbClose" aria-label="Zavřít">✕</button>
+    <button class="lb__btn lb__prev" id="lbPrev" aria-label="Předchozí">‹</button>
+    <img class="lb__img" id="lbImg" src="" alt="">
+    <button class="lb__btn lb__next" id="lbNext" aria-label="Další">›</button>
+    <div class="lb__counter" id="lbCounter"></div>
+  </div>
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky" id="sticky" aria-hidden="true">
+    <a href="tel:+420737318138" class="btn btn-gd">📞 Zavolat</a>
+    <a href="#kontakt"          class="btn btn-gold">Poptat termín</a>
+  </div>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const nav    = document.getElementById('nav');
+      const sticky = document.getElementById('sticky');
+
+      function onScroll() {
+        const past = window.scrollY > 60;
+        nav.classList.toggle('solid', past);
+        sticky.classList.toggle('show', past);
+        sticky.setAttribute('aria-hidden', String(!past));
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Fade-in on scroll
+      const io = new IntersectionObserver(
+        entries => entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+        }),
+        { threshold: 0.08, rootMargin: '0px 0px -32px 0px' }
+      );
+      document.querySelectorAll('.fi').forEach(el => io.observe(el));
+
+      // Smooth scroll
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const t = document.querySelector(a.getAttribute('href'));
+          if (!t) return;
+          e.preventDefault();
+          window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 74, behavior: reduced ? 'auto' : 'smooth' });
+        });
+      });
+
+      // Lightbox
+      const lb        = document.getElementById('lb');
+      const lbImg     = document.getElementById('lbImg');
+      const lbCounter = document.getElementById('lbCounter');
+      const lbClose   = document.getElementById('lbClose');
+      const lbPrev    = document.getElementById('lbPrev');
+      const lbNext    = document.getElementById('lbNext');
+
+      const galleryImgs = Array.from(document.querySelectorAll('.gi img'));
+      let current = 0;
+
+      function lbShow(index) {
+        current = (index + galleryImgs.length) % galleryImgs.length;
+        const src = galleryImgs[current].src;
+        const alt = galleryImgs[current].alt;
+        lbImg.classList.add('switching');
+        setTimeout(() => {
+          lbImg.src = src;
+          lbImg.alt = alt;
+          lbImg.classList.remove('switching');
+        }, 220);
+        lbCounter.textContent = `${current + 1} / ${galleryImgs.length}`;
+      }
+
+      function lbOpen(index) {
+        lbImg.src = galleryImgs[index].src;
+        lbImg.alt = galleryImgs[index].alt;
+        current = index;
+        lbCounter.textContent = `${current + 1} / ${galleryImgs.length}`;
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        lbClose.focus();
+      }
+
+      function lbCloseHandler() {
+        lb.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      galleryImgs.forEach((img, i) => {
+        img.closest('.gi').addEventListener('click', () => lbOpen(i));
+      });
+
+      lbClose.addEventListener('click', lbCloseHandler);
+      lbPrev.addEventListener('click', () => lbShow(current - 1));
+      lbNext.addEventListener('click', () => lbShow(current + 1));
+
+      lb.addEventListener('click', e => { if (e.target === lb) lbCloseHandler(); });
+
+      document.addEventListener('keydown', e => {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape')     lbCloseHandler();
+        if (e.key === 'ArrowLeft')  lbShow(current - 1);
+        if (e.key === 'ArrowRight') lbShow(current + 1);
+      });
+
+      // Touch/swipe support for lightbox
+      let touchStartX = 0;
+      lb.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+      lb.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 50) lbShow(dx < 0 ? current + 1 : current - 1);
+      });
+
+      // Form
+      // TODO: Nahraďte fetch URL za váš backend / Formspree / EmailJS endpoint.
+      // Příklad s Formspree:
+      //   const res = await fetch('https://formspree.io/f/VAŠE_ID', {
+      //     method: 'POST', body: new FormData(form),
+      //     headers: { Accept: 'application/json' }
+      //   });
+      const form      = document.getElementById('contactForm');
+      const formSucc  = document.getElementById('formSuccess');
+      const submitBtn = document.getElementById('submitBtn');
+
+      form.addEventListener('submit', async e => {
+        e.preventDefault();
+        if (form.elements['website'].value) return; // honeypot
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        submitBtn.textContent = 'Odesílám…';
+        submitBtn.disabled = true;
+        try {
+          await new Promise(r => setTimeout(r, 1000)); // ← nahraďte skutečným fetch
+          form.style.display = 'none';
+          formSucc.style.display = 'block';
+        } catch {
+          submitBtn.textContent = 'Zkuste to znovu';
+          submitBtn.disabled = false;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
